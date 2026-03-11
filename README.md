@@ -1,23 +1,33 @@
-# Future Interns Cyber Security Internship
+# FUTURE_CS_01
 
-## Task 1: Vulnerability Assessment Report
+## Cybersecurity Web Scan Project
 
-**Intern:** Erica Awuah  
-**Track:** Cyber Security  
-**Repository:** FUTURE_CS_01  
-
-### Objective
-This project performs a basic vulnerability assessment on a practice website to identify potential security issues and recommend fixes.
+This project demonstrates basic cybersecurity reconnaissance techniques using Nmap and browser developer tools.
 
 ### Tools Used
 - Nmap
-- OWASP ZAP (Passive Scan)
-- Browser Developer Tools
+- Google Chrome Developer Tools
+- GitHub
 
-### Target Website
+### Step 1: Nmap Scan
+A service version scan was performed on the test site:
+
 testphp.vulnweb.com
 
-### Deliverables
-- Vulnerability Assessment Report
-- Security findings and risk levels
-- Screenshots of scan results 
+Command used:
+nmap -sV testphp.vulnweb.com
+
+Result:
+The scan identified that port 80 is open and the server is running nginx version 1.19.0.
+
+### Step 2: Web Application Analysis
+Using Chrome Developer Tools, the Network tab was inspected to view HTTP headers and server responses.
+
+Findings:
+The server header confirms the web server is nginx/1.19.0.
+
+### Purpose
+This project demonstrates how security analysts gather information about web servers during the reconnaissance phase of a security assessment.
+
+### Screenshots
+Screenshots of the scan results and HTTP header analysis are stored in the screenshots folder.
