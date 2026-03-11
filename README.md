@@ -30,4 +30,9 @@ The server header confirms the web server is nginx/1.19.0.
 This project demonstrates how security analysts gather information about web servers during the reconnaissance phase of a security assessment.
 
 ### Screenshots
-Screenshots of the scan results and HTTP header analysis are stored in the screenshots folder.
+
+#### Nmap Scan Result
+![Nmap Scan](screenshots/nmap_scan.png)
+
+#### HTTP Header Analysis
+![Header Scan](screenshots/headers_scan.png)
